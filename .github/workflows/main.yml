@@ -1,5 +1,9 @@
-name: Workflow Name
-on: push
+name: Workflow
+on:
+  issues:
+    types:
+      - opened
+      - reopened
 jobs:
   job_name:
     runs-on: ubuntu-latest
